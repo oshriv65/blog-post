@@ -1,0 +1,52 @@
+
+.createPostSection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #52616B;
+    margin-left: 75px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #C9D6DF;
+}
+
+.createPostButton {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 10px;
+    border: 1px solid #52616B;
+  }
+
+.createPostButton a{
+    color: #52616B;
+}
+
+.createPostSection p{
+    color: #52616B;
+}
+
+.post{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    margin-top: 20px;
+}
+
+
+.post > p{
+    margin-right: 50px;
+    color: #C9D6DF;
+    white-space: pre-line;
+}
+
+#author{
+    border: 2px solid #C9D6DF;
+    background-color: #EAEDF0;
+    border-radius: 10px;
+    padding: 3px;
+    max-width: fit-content;
+}

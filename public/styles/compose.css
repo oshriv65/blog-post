@@ -1,0 +1,38 @@
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.composeHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 300px;
+    max-height: 30px;
+}
+
+#name{
+    padding-right: 10px;
+}
+
+#title{
+    padding-right: 20px;
+}
+
+label{
+    padding: 10px 0px;
+}
+textarea{
+    border-radius: 6px;
+    border: black 2px solid;
+}
+input[type="text"]{
+    border-radius: 6px;
+
+}
+input[type="submit"]{
+    border-radius: 6px;
+    background-color: white;
+}

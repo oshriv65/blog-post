@@ -1,0 +1,63 @@
+/*
+colors:
+https://colorhunt.co/palette/f0f5f9c9d6df52616b1e2022
+*/
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: white;
+    margin: 0 0;
+}
+
+/*
+Nav section
+*/
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #EAEDF0;
+    padding: 0 25px;
+}
+
+.right-nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    margin: auto 15px;
+    color: #52616B;
+    font-size: 1.25rem;
+}
+
+h1{
+    font-size: 2rem;
+    color: #52616B;
+}
+
+/*
+Body section
+*/
+
+.box{
+    text-align: center;
+    max-width: 850px;
+    margin: 50px auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*
+End of the page
+*/
+
+footer{
+    text-align: center;
+}

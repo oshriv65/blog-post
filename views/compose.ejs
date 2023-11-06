@@ -1,0 +1,26 @@
+<%- include("partials/header.ejs") %>
+<link rel="stylesheet" href="styles/compose.css">
+    <main>
+        <div class="box">
+            <form action="/post" method="post">
+                <div class="composeHeader">
+                    <p id="name">Name:</p>
+                    <input type="text" name="name">
+                </div>
+
+                <div class="composeHeader">
+                    <p id="title">Title:</p>
+                    <input type="text" name="title">
+                </div>
+
+                <label>
+                    <textarea cols="60" rows="15" name="content" placeholder="What's on your mind?"></textarea>
+                </label>
+                <input type="submit" name="submit" value="Post">
+            </form>
+        </div>
+    </main>
+</body>
+
+<%- include("partials/footer.ejs") %>
+</html>

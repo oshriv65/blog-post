@@ -1,0 +1,26 @@
+<%- include("partials/header.ejs") %>
+<link rel="stylesheet" href="styles/home.css">
+    <main>
+        <div class="box">
+
+            <div class="createPostSection">
+                <button class="createPostButton"><a href="/createPost">+</a></button>
+                <p>Add a new post</p>
+            </div>
+            <% posts.forEach(post => { %>
+                <div class="post">
+                    <p><%= post.date %></p>
+                    <div>
+                        <h2><%= post.title %></h2>
+                        <p id="author"><%= post.userName %></p>
+                        <p><%= post.content %></p>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+    </main>
+</body>
+
+<%- include("partials/footer.ejs") %>
+
+</html>
