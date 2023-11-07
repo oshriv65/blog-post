@@ -23,11 +23,17 @@ app.use(bodyParser.urlencoded({ extended: false }));
 let postsArray = [];
 
 app.get("/", async(req, res) => {
-    postsArray = await Post.find();
-    const reversed = postsArray.reverse();
-    res.render("blog.ejs", {
-        posts: reversed
-    });
+    try{
+        postsArray = await Post.find();
+        const reversed = postsArray.reverse();
+        res.render("blog.ejs", {
+            posts: reversed
+        });
+    }
+    catch(err){
+        console.log(err);
+    }
+
 });
 
 app.get("/about-us", (req, res) => {
@@ -42,7 +48,7 @@ app.get("/createPost", (req, res) => {
     res.render("compose.ejs");
 });
 
-app.post("/post", async(req, res) => {
+app.post("/post", (req, res) => {
     // get the date
     const today = new Date();
     const month = today.getMonth() + 1; // Months are zero-indexed in JavaScript
