@@ -37,7 +37,7 @@ the user can write the post and publish it to the site.
 ![contact-us](./public/assets/contact-us.png)
 
 ## Setup
-To run the todo-list website you need couple of softwares:
+To run the Blog website you need couple of softwares:
 - node.js .
 - npm modules I included(easy to install).
 - MongoDB.
